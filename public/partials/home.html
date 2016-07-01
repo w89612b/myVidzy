@@ -1,0 +1,10 @@
+<h1>Home Page</h1>
+<!--注意这个URL带有前缀/#来兼容老的浏览器-->
+<ul class="list-group">
+	<li class="list-group-item" ng-repeat="video in videos">
+	<span class="badge"><a href="/#/video/delete/{{video._id}}"><span class="glyphicon glyphicon-remove-sign"></span></a></span>
+	<a href="/#/video/{{video._id}}">{{video.title}}</a>
+	</li>
+</ul>
+
+<a href="/#/add-video" class="btn btn-primary">add-video</a>
